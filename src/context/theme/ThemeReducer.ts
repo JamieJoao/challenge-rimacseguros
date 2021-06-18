@@ -15,6 +15,7 @@ export interface ThemeState {
   colors: {
     redRimac: string[]
     green: string[]
+    purple: string[]
     grayTitle: string[]
     placeholder: string[]
     separator: string[]

@@ -8,6 +8,7 @@ export const ThemeLight: ThemeState = {
   colors: {
     redRimac: ['#EF3340',],
     green: ['#43B748', '#7CC954',],
+    purple: ['#6769FF'],
     grayTitle: ['#494F66',],
     placeholder: ['#A3ABCC', '#676F8F',],
     separator: ['#E4E8F7',],
@@ -24,6 +25,7 @@ export const ThemeDark: ThemeState = {
   colors: {
     redRimac: [],
     green: [],
+    purple: [],
     grayTitle: [],
     placeholder: [],
     separator: [],
