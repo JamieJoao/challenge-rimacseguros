@@ -9,6 +9,7 @@ interface Props {
   font?: availableFonts
   weight?: availableWeights
   children?: React.ReactNode
+  transform?: 'uppercase' | 'lowercase'
   style?: React.CSSProperties
 }
 
@@ -25,6 +26,7 @@ export const Text = ({
   font = 'Lato',
   weight = 'normal',
   style,
+  transform = 'lowercase',
   children
 }: Props) => {
 
@@ -45,6 +47,7 @@ export const Text = ({
         fontSize: size,
         fontFamily: font,
         fontWeight: weight,
+        textTransform: transform,
         ...style,
       }}
     >
