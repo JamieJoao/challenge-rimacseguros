@@ -8,12 +8,10 @@ import { breakpoints } from "constants/index";
  */
 export const useMediaQuery = () => {
 
-  const isMobile = useMedia(`(min-width: ${breakpoints.mobile})`)
-  const isDesktop = useMedia(`(min-width: ${breakpoints.desktop})`)
+  const isMobile = useMedia(`(min-width: ${breakpoints.mobile}) and (max-width: ${breakpoints.desktop})`)
 
   return {
     isMobile,
-    isDesktop,
   }
 
 }
