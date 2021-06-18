@@ -1,0 +1,16 @@
+@import 'styles/mixins.scss';
+@import 'styles/variables.scss';
+
+.r-container {
+  width: 100%;
+
+  @include breakpoint($breakpoint-mobile) {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  @include breakpoint($breakpoint-desktop) {
+    padding-left: 120px;
+    padding-right: 120px;
+  }
+}
