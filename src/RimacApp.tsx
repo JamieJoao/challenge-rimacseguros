@@ -1,10 +1,10 @@
 import React from 'react'
 
+import { MainRoute } from "./routes";
+
 const RimacApp = () => {
   return (
-    <div>
-      RIMAC APP
-    </div>
+    <MainRoute />
   )
 }
 
