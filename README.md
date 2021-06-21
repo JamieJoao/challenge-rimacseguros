@@ -21,6 +21,12 @@ El cual tiene las siguientes características:
 npm install react-router-dom
 ```
 
+* react-use: Hooks para utilidades 
+
+```js
+npm i react-use
+```
+
 ## Estructura
 
 # src
@@ -44,17 +50,28 @@ npm install react-router-dom
   * [common/](.\src\components\common)
     * [index.ts](.\src\components\common\index.ts)
   * [layout/](.\src\components\layout)
+    * [AppState.tsx](.\src\components\layout\AppState.tsx)
     * [index.ts](.\src\components\layout\index.ts)
+    * [MultipleProvider.tsx](.\src\components\layout\MultipleProvider.tsx)
 * [constants/](.\src\constants)
   * [index.ts](.\src\constants\index.ts)
   * [routeNames.ts](.\src\constants\routeNames.ts)
+* [context/](.\src\context)
+  * [theme/](.\src\context\theme)
+    * [index.ts](.\src\context\theme\index.ts)
+    * [ThemeContext.tsx](.\src\context\theme\ThemeContext.tsx)
+    * [ThemeReducer.ts](.\src\context\theme\ThemeReducer.ts)
+    * [Themes.ts](.\src\context\theme\Themes.ts)
 * [hooks/](.\src\hooks)
   * [index.ts](.\src\hooks\index.ts)
+  * [useTheme.ts](.\src\hooks\useTheme.ts)
 * [routes/](.\src\routes)
   * [index.ts](.\src\routes\index.ts)
   * [MainRoute.tsx](.\src\routes\MainRoute.tsx)
-* [state-management/](.\src\state-management)
+* [styles/](.\src\styles)
+  * [global.scss](.\src\styles\global.scss)
 * [types/](.\src\types)
+  * [index.ts](.\src\types\index.ts)
 * [utils/](.\src\utils)
   * [index.ts](.\src\utils\index.ts)
 * [views/](.\src\views)

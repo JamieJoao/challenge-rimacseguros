@@ -1,23 +1,39 @@
-import React from 'react'
-import { Row, Col } from "react-flexbox-grid";
-import { useMediaQuery } from "hooks";
+// import React from 'react'
+// import { Row, Col } from "react-flexbox-grid";
+// import { useMediaQuery } from "hooks";
+// import './styles.scss'
+// import { Container } from '../Container/Container';
+// import { useTheme } from 'hooks/useTheme';
+// import { parameters } from 'constants/index';
 
-import './styles.scss'
+import { Grid, Container } from "components/layout";
 
 import RimacLogo from 'assets/icons/logo-rimac.svg'
 import PhoneIcon from 'assets/icons/gl_phone-20x20.svg'
-import { Container } from '../Container/Container';
-import { useTheme } from 'hooks/useTheme';
-import { parameters } from 'constants/index';
+
+import styles from './Header.module.sass'
 
 export const Header = () => {
 
-  const { colors } = useTheme()
-  const { isMobile } = useMediaQuery()
+  // const { colors } = useTheme()
+  // const { isMobile } = useMediaQuery()
 
   return (
-    <div className='r-header'>
+    <div className={styles.Header}>
       <Container>
+        <Grid container>
+          <Grid item xs={6}>
+            <img src={RimacLogo} alt='Logo Rimac' />
+          </Grid>
+          <Grid item xs={6} className={styles.Header_contact_phone}>
+            <img src={PhoneIcon} alt='Ícono de teléfono' />
+            <div className={styles.Header_phone_number}>
+              <span>Llámanos</span>
+            </div>
+          </Grid>
+        </Grid>
+      </Container>
+      {/* <Container>
         <Row>
           <Col xs>
             <img src={RimacLogo} alt='Logo Rimac' />
@@ -45,7 +61,7 @@ export const Header = () => {
             </div>
           </Col>
         </Row>
-      </Container>
+      </Container> */}
     </div>
   )
 }

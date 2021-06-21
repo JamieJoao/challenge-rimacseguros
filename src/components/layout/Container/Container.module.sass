@@ -1,0 +1,30 @@
+@import variables
+@import mixins
+
+.Container
+  margin-left: auto
+  margin-right: auto
+
+  @each $device, $size in $devices
+    &_#{$device}
+      max-width: $size
+
+      @if $size >= $xxl
+        @include media-query(max, $xxl)
+          max-width: $xl
+
+      @if $size >= $xl
+        @include media-query(max, $xl)
+          max-width: $lg
+
+      @if $size >= $lg
+        @include media-query(max, $lg)
+          max-width: $md
+
+      @if $size >= $md
+        @include media-query(max, $md)
+          max-width: $sm
+
+      @if $size >= $sm
+        @include media-query(max, $sm)
+          max-width: $xs

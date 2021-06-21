@@ -1,9 +1,7 @@
-import React from 'react'
+import { MainRoute } from "routes";
+import { AppState } from 'components/layout';
 
-import { MainRoute } from "./routes";
-import { AppState } from './components/layout';
-
-import './styles/global.scss'
+import 'styles/global.sass'
 
 const RimacApp = () => {
   return (

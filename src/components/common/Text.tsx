@@ -1,15 +1,17 @@
 import React from 'react'
 
-import { availableColors, availableFonts, availableWeights } from 'types';
-import { useTheme } from '../../hooks/useTheme';
+import { availableColors, availableFonts, availableWeights } from 'types/index';
+import { useTheme } from '../../hooks/__useTheme';
 
 interface Props {
   color?: availableColors
+  className?: string
   size?: number
   font?: availableFonts
   weight?: availableWeights
   children?: React.ReactNode
-  transform?: 'uppercase' | 'lowercase'
+  transform?: 'uppercase' | 'lowercase' | 'none'
+  block?: boolean
   style?: React.CSSProperties
 }
 
@@ -22,11 +24,13 @@ type ColorsMap = { [key in availableColors]: string }
  */
 export const Text = ({
   color = 'gray-bold',
+  className,
   size = 14,
   font = 'Lato',
   weight = 'normal',
   style,
-  transform = 'lowercase',
+  transform = 'none',
+  block,
   children
 }: Props) => {
 
@@ -42,12 +46,14 @@ export const Text = ({
 
   return (
     <span
+      className={className}
       style={{
         color: colorsMap[color],
         fontSize: size,
         fontFamily: font,
         fontWeight: weight,
         textTransform: transform,
+        display: block ? 'block' : 'inline',
         ...style,
       }}
     >

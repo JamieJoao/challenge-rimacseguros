@@ -1,8 +1,5 @@
-import { availableColors } from './colors';
-import { availableFonts, availableWeights } from './fonts';
+export type availableColors = 'gray-bold' | 'gray-soft' | 'placeholder' | 'red' | 'purple'
 
-export {
-  availableColors,
-  availableFonts,
-  availableWeights,
-}
+export type availableFonts = 'Lato' | 'Roboto'
+
+export type availableWeights = 'bold' | 'normal'

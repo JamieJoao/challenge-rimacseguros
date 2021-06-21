@@ -1,0 +1,12 @@
+@import variables
+@import mixins
+
+.Header
+  @include media-query(max, $xs)
+    height: $header-h-mobile
+
+  @include media-query(min, $sm)
+    height: $header-h-desktop
+
+  &_contact_phone
+    @include apply-font(lato)

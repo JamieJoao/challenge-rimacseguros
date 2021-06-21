@@ -1,0 +1,20 @@
+@import variables
+
+@mixin mediaGrid($range, $device, $size)
+  @media (#{$range}-width: $size)
+    @for $i from 1 through $grid-cols
+      &_#{$device}_#{$i}
+        grid-column: span $i
+
+.Grid
+  display: grid
+  grid-template-columns: repeat($grid-cols, 1fr)
+
+  &_item
+    margin-left: $gap /2
+    margin-right: $gap /2
+
+    @include mediaGrid(max, xs, $sm)
+
+    @each $device, $size in $devices
+      @include mediaGrid(min, $device, $size)

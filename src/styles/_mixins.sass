@@ -1,0 +1,13 @@
+@import variables
+
+@mixin media-query($range, $size)
+  @media (#{$range}-width: $size)
+    @content
+
+@mixin theme-current($property, $color)
+  @each $theme-name, $theme-color in $themes
+    .theme-#{$theme-name} &
+      #{$property}: map-get($theme-color, $color)
+
+@mixin apply-font($font)
+  font-family: $font
