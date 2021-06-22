@@ -1,43 +1,40 @@
-import { useReducer, createContext } from "react";
+import { useState, ReactNode, createContext } from "react";
 
-import { ThemeReducer, ThemeState } from './ThemeReducer';
-import { ThemeLight } from "./Themes";
+type ThemeType = 'light' | 'dark'
 
-/**
- * Interfaz que define como debería verse el contexto del Tema
- */
 interface ThemeContextProps {
-  currentTheme: ThemeState
+  theme: ThemeType
   toggleTheme: () => void
+  switchTheme: (theme: ThemeType) => void
 }
 
-/**
- * Contexto para el Tema
- */
 export const ThemeContext = createContext({} as ThemeContextProps)
 
-/**
- * Proveedor que envolverá toda la aplicación
- * @param param0 
- * @returns 
- */
-export const ThemeProvider = ({ children }: { children: JSX.Element }) => {
-  const [currentTheme, dispatch] = useReducer(ThemeReducer, ThemeLight)
+export const ThemeProvider = ({ children }: { children: ReactNode }) => {
+
+  const [theme, setTheme] = useState<ThemeType>('light')
 
   const toggleTheme = () => {
-    dispatch({
-      type: currentTheme.dark ? 'theme_set_light' : 'theme_set_dark'
-    })
+    setTheme(
+      theme === 'light' ? 'dark' : 'light'
+    )
+  }
+
+  const switchTheme = (inputTheme: ThemeType) => {
+    setTheme(inputTheme)
   }
 
   return (
     <ThemeContext.Provider
       value={{
-        currentTheme,
+        theme,
         toggleTheme,
+        switchTheme,
       }}
     >
-      {children}
+      <div className={`theme-${theme}`}>
+        {children}
+      </div>
     </ThemeContext.Provider>
   )
 

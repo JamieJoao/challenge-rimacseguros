@@ -1,7 +1,7 @@
-import { useTheme } from './__useTheme';
-// import { useMediaQuery } from './__useMediaQuery';
+import { useTheme } from './useTheme';
+import { useBreakpoint } from './useBreakpoint';
 
 export {
   useTheme,
-  // useMediaQuery,
+  useBreakpoint,
 }

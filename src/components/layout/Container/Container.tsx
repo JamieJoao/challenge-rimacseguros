@@ -8,17 +8,20 @@ interface Props {
   fluid?: boolean
   disableGutters?: boolean
   maxWidth?: 'xs' | 'sm' | 'md' | 'lg' | 'xl' | 'xxl'
+  className?: string
 }
 
 export const Container = ({
   children,
   fluid,
   disableGutters,
-  maxWidth = 'xl'
+  maxWidth = 'xl',
+  className,
 
 }: Props) => {
 
   const classNames = cn(
+    className,
     {
       [styles.Container_disable_gutters]: disableGutters,
     },

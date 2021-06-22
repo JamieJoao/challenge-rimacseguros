@@ -1,13 +1,14 @@
 @import variables
 
-@mixin media-query($range, $size)
+@mixin use-media($range, $size)
   @media (#{$range}-width: $size)
     @content
 
-@mixin theme-current($property, $color)
-  @each $theme-name, $theme-color in $themes
-    .theme-#{$theme-name} &
-      #{$property}: map-get($theme-color, $color)
+@mixin use-theme($property, $color, $transition: true)
+  #{$property}: var(--#{$color})
 
-@mixin apply-font($font)
+  @if $transition == true
+    transition: $property .3s linear
+
+@mixin use-font($font)
   font-family: $font

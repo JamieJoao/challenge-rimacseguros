@@ -2,11 +2,35 @@
 @import mixins
 
 .Header
-  @include media-query(max, $xs)
+  display: flex
+  align-items: center
+  position: relative
+  z-index: 1
+
+  @include use-media(max, $xs)
     height: $header-h-mobile
 
-  @include media-query(min, $sm)
+  @include use-media(min, $sm)
     height: $header-h-desktop
 
-  &_contact_phone
-    @include apply-font(lato)
+  .left_side
+    display: flex
+    align-items: center
+
+  .right_side
+    display: flex
+    flex-direction: row
+    align-items: center
+    justify-content: flex-end
+
+  .some_question
+    @include use-theme(color, placeholder-2)
+    @include use-font(roboto)
+    font-size: 12px
+    margin-right: 20px
+
+  .phone_number
+    font-size: 14px
+    margin-left: 4px
+    @include use-font(lato)
+    @include use-theme(color, purple)

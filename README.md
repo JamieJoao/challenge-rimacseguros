@@ -26,6 +26,11 @@ npm install react-router-dom
 ```js
 npm i react-use
 ```
+* classnames: Paquete que me permite juntar varias clases en una
+
+```js
+npm i classnames
+```
 
 ## Estructura
 

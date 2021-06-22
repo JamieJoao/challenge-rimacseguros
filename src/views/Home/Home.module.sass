@@ -1,0 +1,62 @@
+@import variables
+@import mixins
+
+.Home
+  @include use-theme(background-color, background)
+
+  .jumbotron
+    @include use-media(max, $xs)
+      padding: 48px 0
+
+    .text_new
+      font-weight: bold
+
+      @include use-font(lato)
+      @include use-theme(color, gray)
+      @include use-media(max, $xs)
+        font-size: 10px
+
+    .description
+      font-size: 28px
+      margin-top: 8px
+      @include use-font(lato)
+
+      .text
+        &_secure
+          margin-right: 6px
+          @include use-theme(color, gray)
+
+        &_vehicle
+          @include use-media(max, $xs)
+            @include use-theme(color, gray)
+
+          @include use-media(min, $sm)
+            @include use-theme(color, red)
+
+        &_track
+          display: block
+          @include use-theme(color, red)
+
+    .text_comment
+      font-size: 14px
+      margin-top: 12px
+      display: block
+
+      @include use-font(roboto)
+      @include use-theme(color, placeholder-2)
+
+    .image_woman
+      position: fixed
+      top: $header-h-mobile
+      margin-left: 24px
+
+  .form
+    padding-top: 40px
+
+    @include use-theme(background-color, native)
+
+    .text_title
+      font-size: 24px
+      
+      @include use-font(lato)
+      @include use-theme(color, gray)
