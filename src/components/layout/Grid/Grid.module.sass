@@ -1,3 +1,4 @@
+@use 'sass:math'
 @import variables
 
 @mixin mediaGrid($range, $device, $size)
@@ -11,8 +12,8 @@
   grid-template-columns: repeat($grid-cols, 1fr)
 
   &_item
-    margin-left: $gap /2
-    margin-right: $gap /2
+    margin-left: math.div($gap, 2)
+    margin-right: math.div($gap, 2)
 
     @include mediaGrid(max, xs, $sm)
 
