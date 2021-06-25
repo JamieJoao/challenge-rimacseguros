@@ -47,7 +47,7 @@
 
     .image_woman
       position: fixed
-      top: $header-h-mobile
+      top: $generic-h
       margin-left: 24px
 
   .form
@@ -57,6 +57,21 @@
 
     .text_title
       font-size: 24px
+      display: block
+      margin-bottom: 24px
       
       @include use-font(lato)
       @include use-theme(color, gray)
+
+    .accept
+      margin-top: 24px
+      margin-bottom: 40px
+
+      @include use-font(roboto)
+      
+      span,
+      a 
+        @include use-theme(color, placeholder-2)
+
+      span
+        font-weight: 300
