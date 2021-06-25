@@ -9,7 +9,7 @@ $devices: (xs: $xs, sm: $sm, md: $md, lg: $lg, xl: $xl, xxl: $xxl);
 
 $grid-cols: 12;
 $gutter: 32px;
-$gap: 1rem;
+$gap: 0;
 
-$header-h-mobile: 56px;
+$generic-h: 56px;
 $header-h-desktop: 64px;

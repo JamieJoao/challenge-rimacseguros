@@ -1,0 +1,1 @@
+export const DNI_REGEX = /^\d{8}(?:[-\s]\d{4})?$/
