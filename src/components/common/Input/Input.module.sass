@@ -1,0 +1,70 @@
+@import variables
+@import mixins
+
+.Input
+  display: flex
+  flex-direction: column
+  border-width: 1px
+  border-style: solid
+  border-radius: 4px
+
+  @include use-theme(border-color, border-2)
+
+  &_dropdown
+
+    &_root
+      display: flex
+      height: 100%
+      border-right-width: 1px
+      border-right-style: solid
+
+      @include use-theme(border-right-color, border-2)
+      @include use-font(lato)
+
+    &_placeholder
+      @include use-theme(color, gray)
+
+    &_control
+      width: 100%
+      display: flex
+      align-items: center
+      justify-content: space-between
+      border: none !important
+      border-radius: 4px !important
+      padding: 0 16px !important
+      background-color: transparent !important
+
+  input
+    height: $generic-h
+    padding-left: 16px
+    padding-right: 16px
+    font-size: 16px
+    border: none
+    outline: none
+    width: 100%
+    border-radius: 5px
+
+    @include use-theme(color, gray)
+    @include use-font(lato)
+
+    &::placeholder
+      @include use-theme(color, placeholder-1)
+
+  &_wrapper
+    margin-bottom: 16px
+
+    .has_error
+      @include use-theme(border-color, red)
+
+    .has_disabled
+      opacity: .7
+      input
+        @include use-theme(background-color, native)
+
+  &_error
+    font-size: 12px
+    margin-top: 8px
+    display: block
+
+    @include use-theme(color, red)
+    @include use-font(lato)

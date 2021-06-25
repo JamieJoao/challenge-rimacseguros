@@ -1,0 +1,21 @@
+@import variables
+@import mixins
+
+.Button
+  border: none
+  border-radius: 8px
+  height: $generic-h
+  margin-bottom: 16px
+  width: 100%
+  
+  @include use-theme(background-color, red)
+
+  &_disabled
+    opacity: .5
+
+  &_title
+    font-size: 14px
+    text-transform: uppercase
+    
+    @include use-font(lato)
+    @include use-theme(color, native)
