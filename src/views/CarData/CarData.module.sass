@@ -1,0 +1,14 @@
+@import mixins
+@import variables
+  
+.Data
+  &_greetings
+    font-size: 28px
+
+    @include use-font(lato)
+
+  &_hi
+    @include use-theme(color, gray)
+
+  &_name
+    @include use-theme(color, red)
