@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/rimac-hacking-challenge/static/css/main.3ece9cf3.chunk.css",
+    "main.js": "/rimac-hacking-challenge/static/js/main.96fd58b2.chunk.js",
+    "main.js.map": "/rimac-hacking-challenge/static/js/main.96fd58b2.chunk.js.map",
+    "runtime-main.js": "/rimac-hacking-challenge/static/js/runtime-main.a003dfb7.js",
+    "runtime-main.js.map": "/rimac-hacking-challenge/static/js/runtime-main.a003dfb7.js.map",
+    "static/css/2.fe708519.chunk.css": "/rimac-hacking-challenge/static/css/2.fe708519.chunk.css",
+    "static/js/2.8dee4348.chunk.js": "/rimac-hacking-challenge/static/js/2.8dee4348.chunk.js",
+    "static/js/2.8dee4348.chunk.js.map": "/rimac-hacking-challenge/static/js/2.8dee4348.chunk.js.map",
+    "static/js/3.6f8e76b1.chunk.js": "/rimac-hacking-challenge/static/js/3.6f8e76b1.chunk.js",
+    "static/js/3.6f8e76b1.chunk.js.map": "/rimac-hacking-challenge/static/js/3.6f8e76b1.chunk.js.map",
+    "index.html": "/rimac-hacking-challenge/index.html",
+    "static/css/2.fe708519.chunk.css.map": "/rimac-hacking-challenge/static/css/2.fe708519.chunk.css.map",
+    "static/css/main.3ece9cf3.chunk.css.map": "/rimac-hacking-challenge/static/css/main.3ece9cf3.chunk.css.map",
+    "static/js/2.8dee4348.chunk.js.LICENSE.txt": "/rimac-hacking-challenge/static/js/2.8dee4348.chunk.js.LICENSE.txt",
+    "static/media/gl_arrow_down.3db51138.svg": "/rimac-hacking-challenge/static/media/gl_arrow_down.3db51138.svg",
+    "static/media/gl_arrow_up.05bbdcc0.svg": "/rimac-hacking-challenge/static/media/gl_arrow_up.05bbdcc0.svg",
+    "static/media/gl_check.f7eb6175.svg": "/rimac-hacking-challenge/static/media/gl_check.f7eb6175.svg",
+    "static/media/gl_phone-20x20.664a0ecc.svg": "/rimac-hacking-challenge/static/media/gl_phone-20x20.664a0ecc.svg",
+    "static/media/img-1-mobile.e9140345.svg": "/rimac-hacking-challenge/static/media/img-1-mobile.e9140345.svg",
+    "static/media/logo-rimac.ccea3883.svg": "/rimac-hacking-challenge/static/media/logo-rimac.ccea3883.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a003dfb7.js",
+    "static/css/2.fe708519.chunk.css",
+    "static/js/2.8dee4348.chunk.js",
+    "static/css/main.3ece9cf3.chunk.css",
+    "static/js/main.96fd58b2.chunk.js"
+  ]
+}
