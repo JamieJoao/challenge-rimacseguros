@@ -19,10 +19,8 @@ export const useFetch = () => {
         const users = response.data
         if (users.length) {
           const user = users[0]
-          user.nrodoc = nrodoc
-          user.plate = plate
 
-          setSession(user)
+          setSession({ ...user, nrodoc, plate })
         }
       }
 
