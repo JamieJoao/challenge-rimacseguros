@@ -15,7 +15,7 @@ El cual tiene las siguientes características:
 
 ## Lanzar proyecto
 
-Ejecutar los siguientes comandos en orden
+Luego de clonar el proyecto, ejecutar los siguientes comandos en orden
 ```
 npm i
 npm start
@@ -23,7 +23,7 @@ npm start
 
 ## Librerías
 
-* react-router-dom: Enrutamiento y navegación entre páginas
+* react-router-dom: Paquete para el enrutamiento y navegación entre páginas
 
 ```js
 npm install react-router-dom
@@ -51,7 +51,7 @@ npm i validator
 * axios: Paquete para manejar peticiones http a alguna API
 
 ```js
-npm i classnames
+npm i axios
 ```
 
 
