@@ -6,7 +6,6 @@ Este proyecto es corresponde a la etapa de evaluación de habilidades técnicas 
 El cual tiene las siguientes características:
 
 * ReactJS y Typescript
-* Metodología MET (orientado a componentes)
 * SASS
 * Grid System Layout
 * Código limpio y escalable
